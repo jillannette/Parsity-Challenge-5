@@ -1,0 +1,15 @@
+/*Write a function called removeParenth that takes one argument
+ (a string) which has parentheses (1 open and 1 close) and returns that same string, 
+ but without the parentheses and the text inside the parentheses. You can assume 
+ that the string is one word with no spaces and only 1 set of parentheses.*/
+ //'idoliketocode'
+
+const sentence = 'ido(not)liketocode';
+
+function removeParenth (string) {
+  let newSentence = sentence.split('');
+    newSentence.splice(3, 5);
+  return newSentence.join('');
+};
+console.log(removeParenth());
+//idoliketocode
